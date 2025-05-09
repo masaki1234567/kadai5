@@ -1,0 +1,42 @@
+2025-05-09 11:54:07,277 [DEBUG] py4...: Calling cytoscape_ping()
+2025-05-09 11:54:07,278 [DEBUG] py4...: ǀCalling cytoscape_version_info(base_url='http://127.0.0.1:1234/v1')
+2025-05-09 11:54:07,279 [DEBUG] py4...: ǀǀCalling cyrest_get('version', base_url='http://127.0.0.1:1234/v1')
+2025-05-09 11:54:07,279 [DEBUG] py4...: Attempting to direct connect to Cytoscape on http://127.0.0.1:1234/v1
+2025-05-09 11:54:07,291 [DEBUG] py4...: Detected py4cytoscape running on Cytoscape workstation
+2025-05-09 11:54:07,292 [DEBUG] py4...: ǀǀHTTP GET(http://127.0.0.1:1234/v1/version)
+2025-05-09 11:54:07,303 [DEBUG] py4...: ǀǀOK[200], content: {"apiVersion":"v1","cytoscapeVersion":"3.11.0-SNAPSHOT"}
+2025-05-09 11:54:07,303 [DEBUG] py4...: ǀǀReturning 'cyrest_get': {'apiVersion': 'v1', 'cytoscapeVersion': '3.11.0-SNAPSHOT'}
+2025-05-09 11:54:07,304 [DEBUG] py4...: ǀReturning 'cytoscape_version_info': {'apiVersion': 'v1', 'cytoscapeVersion': '3.11.0-SNAPSHOT', 'automationAPIVersion': '1.12.0', 'py4cytoscapeVersion': '1.12.0'}
+2025-05-09 11:54:07,305 [DEBUG] py4...: Returning 'cytoscape_ping': 'You are connected to Cytoscape!'
+2025-05-09 11:54:07,306 [DEBUG] py4...: --------------------
+2025-05-09 11:54:07,306 [DEBUG] py4...: Calling cytoscape_version_info()
+2025-05-09 11:54:07,307 [DEBUG] py4...: ǀCalling cyrest_get('version', base_url='http://127.0.0.1:1234/v1')
+2025-05-09 11:54:07,307 [DEBUG] py4...: ǀHTTP GET(http://127.0.0.1:1234/v1/version)
+2025-05-09 11:54:07,319 [DEBUG] py4...: ǀOK[200], content: {"apiVersion":"v1","cytoscapeVersion":"3.11.0-SNAPSHOT"}
+2025-05-09 11:54:07,320 [DEBUG] py4...: ǀReturning 'cyrest_get': {'apiVersion': 'v1', 'cytoscapeVersion': '3.11.0-SNAPSHOT'}
+2025-05-09 11:54:07,321 [DEBUG] py4...: Returning 'cytoscape_version_info': {'apiVersion': 'v1', 'cytoscapeVersion': '3.11.0-SNAPSHOT', 'automationAPIVersion': '1.12.0', 'py4cytoscapeVersion': '1.12.0'}
+2025-05-09 11:54:07,321 [DEBUG] py4...: --------------------
+2025-05-09 11:55:12,598 [DEBUG] py4...: Calling import_network_from_file('network.sif')
+2025-05-09 11:55:12,598 [DEBUG] py4...: ǀCalling commands_post('network load file file="c:\\Users\\bb38121075\\Desktop\\kadai5\\network.sif"', base_url='http://127.0.0.1:1234/v1')
+2025-05-09 11:55:12,601 [DEBUG] py4...: ǀHTTP POST(http://127.0.0.1:1234/v1/commands/network/load%20file), json: {'file': 'c:\\Users\\bb38121075\\Desktop\\kadai5\\network.sif'}
+2025-05-09 11:55:12,749 [DEBUG] py4...: ǀInternal Server Error[500], content: {
+ "data": {},
+ "errors":[{"status":500,"type":"urn:cytoscape:ci:cyrest-core:v1:handle-json-command:errors:2","message":"File \u0027network.sif\u0027 not found:","link":"file:/C:/Users/bb38121075/CytoscapeConfiguration/3/framework-cytoscape.log"}]
+}
+2025-05-09 11:55:12,750 [DEBUG] py4...: ǀ'commands_post' exception CyError("In commands_post(): File 'network.sif' not found:")
+2025-05-09 11:55:12,750 [DEBUG] py4...: 'import_network_from_file' exception CyError("In commands_post(): File 'network.sif' not found:")
+2025-05-09 11:55:12,751 [DEBUG] py4...: --------------------
+2025-05-09 11:55:20,663 [DEBUG] py4...: Calling import_network_from_file('7network.sif')
+2025-05-09 11:55:20,664 [DEBUG] py4...: ǀCalling commands_post('network load file file="c:\\Users\\bb38121075\\Desktop\\kadai5\\7network.sif"', base_url='http://127.0.0.1:1234/v1')
+2025-05-09 11:55:20,665 [DEBUG] py4...: ǀHTTP POST(http://127.0.0.1:1234/v1/commands/network/load%20file), json: {'file': 'c:\\Users\\bb38121075\\Desktop\\kadai5\\7network.sif'}
+2025-05-09 11:55:21,248 [DEBUG] py4...: ǀOK[200], content: {
+ "data": { "networks":[
+  8298
+], "views":[
+  20250
+]},
+ "errors":[]
+}
+2025-05-09 11:55:21,250 [DEBUG] py4...: ǀReturning 'commands_post': {'networks': [8298], 'views': [20250]}
+2025-05-09 11:55:25,251 [DEBUG] py4...: Returning 'import_network_from_file': {'networks': [8298], 'views': [20250]}
+2025-05-09 11:55:25,251 [DEBUG] py4...: --------------------
